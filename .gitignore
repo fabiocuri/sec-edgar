@@ -1,0 +1,7 @@
+.env
+venv
+venv/
+/venv
+__pycache__
+trashbin.txt
+run.log

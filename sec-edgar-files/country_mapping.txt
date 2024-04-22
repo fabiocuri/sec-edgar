@@ -1,0 +1,10 @@
+{"Curacao": "Netherlands",
+"Anguilla": "United Kingdom",
+"Bermuda": "United Kingdom",
+"Gibraltar": "United Kingdom",
+"Taiwan": "China",
+"Hong Kong": "China",
+"Jersey": "United Kingdom",
+"Guernsey": "United Kingdom",
+"Macao": "China",
+"Cayman Islands": "United Kingdom"}

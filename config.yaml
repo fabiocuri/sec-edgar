@@ -1,0 +1,28 @@
+id: "sec-edgar"
+data_access: "public"
+bigquery_dataset: "sec_edgar"
+bigquery-output:
+  - "CHART_AI_PUBLIC_COMPANIES_PER_US_STATE"
+  - "CHART_EVOLUTION_OF_US_REGISTERED_AI_PUBLIC_COMPANIES_PER_COUNTRY"
+  - "CHART_TOP_CONCEPTS_IN_AI_PUBLIC_COMPANIES_BUSINESS_DESCRIPTIONS"
+retrieve-filings-current-year: true
+download-html-current-year: true
+parse-htmls-current-year: true
+create-dataframe: true
+clean-buckets: true
+generate-visualisation-data: true
+buckets:
+  bucket-files: "sec-edgar-files"
+  bucket-filings: "sec-edgar-filings-list"
+  bucket-10k-filings-html: "sec-edgar-10k-filings-html"
+  bucket-20f-filings-html: "sec-edgar-20f-filings-html"
+  bucket-debug-10k-filings-html: "sec-edgar-debug-10k-filings-html"
+  bucket-debug-20f-filings-html: "sec-edgar-debug-20f-filings-html"
+  bucket-fields-10k-filings-html: "sec-edgar-fields-10k-filings-html"
+  bucket-fields-20f-filings-html: "sec-edgar-fields-20f-filings-html"
+  bucket-results: "sec-edgar-results"
+year: 2024
+batch-size: 200
+state_to_acronym_file: "state_to_acronym.txt"
+country_mapping_file: "country_mapping.txt"
+threshold_concepts: 5
